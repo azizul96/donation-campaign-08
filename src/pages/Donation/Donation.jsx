@@ -34,7 +34,7 @@ const Donation = () => {
                             }
                         </div>
                         <div className={`${cardLength === donates.length && 'hidden' ||donates.length < 4 && 'hidden'} text-center my-10` }>
-                            <button onClick={()=> setCardLength(donates.length)} className="bg-[#009444] px-4 py-2 text-white rounded-md">See All</button>
+                            <button onClick={()=> setCardLength(donates.length)} className="bg-[#009444] px-4 py-2 text-white rounded-md shadow-lg">See All</button>
                         </div>
                     </div>
                 }

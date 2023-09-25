@@ -13,14 +13,14 @@ const Donate = ({card}) => {
         if(!donationItems){
             cardsArray.push(card)
             localStorage.setItem('donations', JSON.stringify(cardsArray))
-            sweetAlert("Good job!", "Added To Donation!", "success")
+            sweetAlert("Good job!", "Added To The Donation Page!", "success")
         }
         else{
             const isExist = donationItems.find(card => card.id === id)
             if(!isExist){
                 cardsArray.push(...donationItems, card)
                 localStorage.setItem('donations', JSON.stringify(cardsArray))
-                sweetAlert("Good job!", "Added To Donation!", "success")
+                sweetAlert("Good job!", "Added To The Donation Page!", "success")
             }
             else{
                 sweetAlert("Oops...", "Already Added!", "error");

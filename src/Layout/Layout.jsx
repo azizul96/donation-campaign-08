@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 const Layout = () => {
     return (
-        <div className="container mx-auto px-5">
+        <div className="container mx-auto px-3">
             <Navbar></Navbar>
             <div className="py-10">
                 <Outlet></Outlet>
