@@ -33,7 +33,7 @@ const Donation = () => {
                             donates.slice(0, cardLength).map(donateCard => <DonationCard key={donateCard.id} donateCard={donateCard}></DonationCard>)   
                             }
                         </div>
-                        <div className={`${cardLength === donates.length && 'hidden'} text-center my-10` }>
+                        <div className={`${cardLength === donates.length && 'hidden' ||donates.length < 4 && 'hidden'} text-center my-10` }>
                             <button onClick={()=> setCardLength(donates.length)} className="bg-[#009444] px-4 py-2 text-white rounded-md">See All</button>
                         </div>
                     </div>
