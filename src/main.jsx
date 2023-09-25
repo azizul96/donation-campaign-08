@@ -8,11 +8,13 @@ import Home from './pages/Home/Home';
 import Donation from './pages/Donation/Donation';
 import Statistics from './pages/Statistics/Statistics';
 import CardDetails from './pages/CardDetails/CardDetails';
+import Error from './pages/Error/Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
