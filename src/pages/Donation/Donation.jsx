@@ -28,7 +28,7 @@ const Donation = () => {
                 {
                     noData ? <p className="h-[50vh] flex justify-center items-center">{noData}</p> :
                     <div>
-                        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-5">
+                        <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
                             {
                             donates.slice(0, cardLength).map(donateCard => <DonationCard key={donateCard.id} donateCard={donateCard}></DonationCard>)   
                             }

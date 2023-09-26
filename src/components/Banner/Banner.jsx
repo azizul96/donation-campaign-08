@@ -1,10 +1,9 @@
 
-
 const Banner = ({handleSubmit}) => {
     return (
         
-            <div className="hero   z-10" >
-                <img className="opacity-10" src={'/banner.png'} alt="" />
+            <div className="hero mt-10" >
+                <img className="opacity-10 w-full" src={'/banner.png'} alt="" />
             <div className="hero-content text-center text-neutral-content">
                 <div className=" relative z-50">
                 <h1 className="mb-5 text-3xl font-bold text-black">I Grow By Helping People In Need</h1>

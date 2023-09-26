@@ -31,7 +31,7 @@ const Donate = ({card}) => {
     }
 
     return (
-        <div>
+        <div className="my-10">
             <div className=" flex justify-center relative">
                 <img className="w-full rounded-lg" src={image} alt="" />
                 <div className="absolute bottom-0 left-0 bg-black opacity-40 w-full  py-10 rounded-b-lg">
